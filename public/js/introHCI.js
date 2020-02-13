@@ -35,8 +35,8 @@ function callBackFn(result){
 	console.log("callback result " + result)
 	$("#project" + result.id + " .details").append("<p>" + result.title + "</P");
 	$("#project" + result.id + " .details").append("<p>" + result.date + "</P");
-	$("#project" + result.id + " .details").append("<img class=\"detailsImage\", src=\""
-		"\"></img");
+	$("#project" + result.id + " .details").append("<img class=\"detailsImage\", src=\"" + result.image + 
+		"\"></img>");
 	$("#project" + result.id + " .details").append(result.summary);
 	
 	
